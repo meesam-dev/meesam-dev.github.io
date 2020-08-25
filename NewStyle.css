@@ -14,7 +14,7 @@
 }
 .wrapper
 {
-    width:1200px;
+    width:auto;
     
     /*background-color:rgb(0,0,55);*/
     margin:auto; /*auto equal margin left and right*/
