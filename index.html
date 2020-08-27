@@ -1,136 +1,156 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-    <link href="NewStyle.css" rel="stylesheet" /> 
-    <title>Mohammed Meesam</title>
-	<meta charset="utf-8" />
-	<meta name=”viewport” content=”width=device-width, initial-scale=1.0” />
-</head>
-<body>
-    <div class="container dark">
-        <div class="wrapper" id="top_div">
-            <div id="top_left">
-                Email: 18201005@majancollege.edu.om
-            </div>
-            <div id="top_right">
-                Mobile: 98778987
-            </div>
-        </div>
-    </div>
-    <div class="container light">
-        <div class="wrapper">
-            <div id="logo_left">
-                <img src="IMAGES/MY logo.png" />
-            </div>
-            <div id="logo_right">   <!--Search box use form id is to recognize in styling name can be anything-->
-                <form>
-                    <input id="textstyle" type="text" name="textbox"/>
-                    <input id="button" type="button" name="search" value="search"/>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="container dark">
-        <div class="wrapper">
-            <ul>        <!--unordered list-->
-                <li><a href="#">Home</a></li>   <!-- list and link-->
-                <li><a href="AboutUs.html">About Us</a></li>
-                <!--<li><a href="#">Courses</a></li>-->
-                <li><a href="Courses.html">Courses</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="ContactUs.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
+	<head>
+		<title>Mohammed Meesam</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-    <div class="container light">
-        <h2>Tomorrow is yours. Hundreds of classes to help you!</h2>
-        <div class="wrapper clearfix">      <!--clear fix is clearing some overlapping issues-->
-            <div class="text">
-                <a href="https://majancollege.edu.om/">
-                    <h2>BIG DATA</h2>
-                </a>
-                <div id="imagewrap">
-                    <img src="IMAGES/big data.png" height="100"/>
-                </div>
-                <div>
-                    <p>
-                        Our world runs on Big Data. From business decisions, to IoT, to improving healthcare,
-                        Big Data has touched every aspect of human life, making it one of the most valuable tech  skills to master today!
-                        There is an unparalleled demand for professionals who can work with Big Data.  We offer you multiple certification courses,
-                        ranging from Hadoop to Data Science to Data Analytics, to help you take advantage of the career opportunities in Big Data.
-                    </p>
-                </div>
-            </div>
-            <div class="text">
-                <a href="https://majancollege.edu.om/">
-                    <h2>CLOUD COMPUTING</h2>
-                    <div id="imagewrap">
-                        <!-- using id inside each division if used again no issue good idea to use class but lets see-->
-                        <!--<a href="https://majancollege.edu.om/">     keeping this before pic will make pic clickable to link
-                            keeping just before CLOUD COMPUTING will make only that clickable
-                            keeping it 2 cover both h2 and pic both will be clickable-->      
-                        <img src="IMAGES/cloud.png" height="100" />
-                    </div>
-                </a>
-                <div>
-                    <p>
-                        With top global companies adopting and harnessing the power of the Cloud,                     
-                        skilled cloud professionals are in high demand, now more than ever. Cloud                     
-                        Computing is undoubtedly the most sought-after skill in today's business environment.  
-                        To help you become part of the cloud revolution, We offer multiple certification courses in Cloud Computing, 
-                        including AWS, Azure, and DevOps.
-                    </p>
-                </div>
-            </div>
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="My Face" /></a>
+					<h1><strong>I am Mohammed Meesam</strong><br />
+					Web Developer/Network Engineer<br />
+					</h1>
+				</div>
+			</header>
 
-            <div class="text">
-                <h2>PROGRAMMING</h2>
-                    <a href="https://majancollege.edu.om/">
-                        <div id="imagewrap">
-                            <!-- using id inside each division if used again no issue good idea to use class but lets see-->
-                            <img src="IMAGES/programming.jpg" height="100" />
-                        </div>
-                    </a>
-                    <p>
-                        Aspiring to become a Developer? Wish to make a career in programming or web development?
-                        Then there's no better time to up-skill than today. Learn the most-used programming languages
-                        and become a master of back-end and front-end web technologies with our certification courses.
-                        We offer you courses in legacy and trending technologies such as Java, Python, Perl, Ruby, Node, js and others.
-                    </p>
-            </div>
+		<!-- Main -->
+			<div id="main">
 
-            <div class="text">
-                <a href="https://majancollege.edu.om/">
-                    <h2>SOFTWARE TESTING</h2>
-                </a>
-                <div id="imagewrap">
-                    <!-- using id inside each division if used again no issue good idea to use class but lets see-->
-                    <img src="IMAGES/testing.png" height="100" />
-                </div>
-                <p>
-                    Software Testing is a vital process without which no software release can occur.                     
-                    Testing makes the software usable. Therefore, there will not be a dearth of career opportunities 
-                    in Testing in the days to come. We provide certification courses for professionals who want to 
-                    learn and gain insights on manual testing and automation testing.
-                </p>
-            </div>
-        </div>
-    </div>
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>About Me<br />
+							</h2>
+						</header>
+						<p>A computer science graduate with a major in Networking. I'm passionate about cybersecurity and web development. Proficient with Python, HTML, CSS, Javascript, Linux and various pentesting tools</p>
+						<ul class="actions">
+							<li><a href="assets/mohammed-meesam-resume.pdf" class="button primary icon solid fa-download">Download Resume</a></li>
+						</ul>
+					</section>
 
-   <div class="container dark">         <!-- can use the same as header top_div,top_left,top_right-->
-        <div class="wrapper" id="bottom">
-            <div id="bot_left">
-                @2018 Majan Academy
-            </div>
-            <div id="bot_right">
-                <img src="IMAGES/face.png" height="40"/>
-                <img src="IMAGES/twitter.png" height="40"/>
-                <img src="IMAGES/whatsapp.png" height="40"/>
-                <img src="IMAGES/insta.jpg" height="40" />
-            </div>
-        </div>
-    </div>
-        
-</body>
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Magna sed consequat tempus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3>Ultricies lacinia interdum</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3>Tortor metus commodo</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3>Quam neque phasellus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3>Nunc enim commodo aliquet</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3>Risus ornare lacinia</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="#" class="button">Full Portfolio</a></li>
+						</ul>
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>You're welcome to get in touch for a chat using the form below and i'll get back to you</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="#">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" onclick="sendEmail()" /></li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										Muscat<br />
+										Sultanate of Oman<br />
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										+968 97444 530
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="mailto:mohmeesam@gmail.com">mohmeesam@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/mohammedmeesam/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/mdmeesam" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.youtube.com/channel/UCJw-ugfpa0100GDEeNW4ZkQ" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+						<li><a href="mailto:mohmeesam@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; by Mohammed Meesam</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<script>
+			//index.js  
+				function sendEmail() 
+				{
+					Email.send({
+					Host: "smtp.gmail.com",
+					Username : "test49262@gmail.com",
+					Password : "Te$t1234",
+					To : 'meesamdude@gmail.com',
+					From : "test49262@gmail.com",
+					Subject : "<Test1>",
+					Body : "<test body>",
+					}).then(
+						message => alert(message)
+					);
+				}</script>
+
+	</body>
 </html>
