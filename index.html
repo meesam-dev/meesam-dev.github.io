@@ -79,16 +79,17 @@
 						<p>You're welcome to get in touch for a chat using the form below and i'll get back to you</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form action="https://formspree.io/xgenjoya" id='idForm'>
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="Name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="Email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="Message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
-								</form>
+								<br/>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" onclick="sendEmail()" /></li>
-								</ul>
+									<li><input type="submit" value="Send Message" /></li>
+								</ul><div class="col-12" style="display:none" id="progress">Your message has been sent succesfully</div>
+								</form>
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
@@ -135,20 +136,41 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<script>
+				$("#idForm").submit(function(e) {
+					var form = $(this);
+					var url = form.attr('action');
+					$.ajax({
+						   type: "POST",
+						   url: url,
+						   data: form.serialize(), // serializes the form's elements.
+						   success: function(data)
+						   {
+							   alert(data); // show response from the php script.
+						   }
+						 });
+					$('#progress').show();
+					e.preventDefault(); // avoid to execute the actual submit of the form.
+				});
+
+			</script>
+			<!--
 			<script type="text/javascript">
 			//index.js  
+			onclick="sendEmail()"
 				function sendEmail() 
 				{
 					Email.send({
-					SecureToken: "0741a3a2-5832-4fa1-a44a-63f6d5fbac4d",
-					To : 'meesamdude@gmail.com',
-					From : "test49262@gmail.com",
+					//SecureToken: "6d5fbac4d",
+					To : 'email',
+					From : "email@gmail.com",
 					Subject : "<Test1>",
 					Body : "<test body>",
 					}).then(
 						message => alert(message)
 					);
 				}</script>
+				-->
 
 	</body>
 </html>
