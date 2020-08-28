@@ -81,13 +81,14 @@
 							<div class="col-8 col-12-small">
 								<form action="https://formspree.io/xgenjoya" id='idForm'>
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="Name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="Email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="Message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="Name" id="name" placeholder="Name" required/></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="Email" id="email" placeholder="Email" required/></div>
+										<div class="col-12"><textarea name="Message" id="message" placeholder="Message" rows="4" required></textarea></div>
 									</div>
 								<br/>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="reset" value="Clear" /></li>
 								</ul><div class="col-12" style="display:none" id="progress">Your message has been sent succesfully</div>
 								</form>
 							</div>
