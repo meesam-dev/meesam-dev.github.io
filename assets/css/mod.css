@@ -1,0 +1,268 @@
+/*
+portfolio
+*/
+.portfolio {
+		border-radius: 0.35em;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.portfolio:before {
+			-moz-transition: opacity 0.2s ease-in-out;
+			-webkit-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
+			background: url("images/overlay.png");
+			border-radius: 0.35em;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.portfolio.thumb {
+			text-align: center;
+		}
+
+			.portfolio.thumb:after {
+				-moz-transition: opacity 0.2s ease-in-out;
+				-webkit-transition: opacity 0.2s ease-in-out;
+				-ms-transition: opacity 0.2s ease-in-out;
+				transition: opacity 0.2s ease-in-out;
+				border-radius: 0.35em;
+				border: solid 3px rgba(255, 255, 255, 0.5);
+				color: #fff;
+				content: 'View';
+				display: inline-block;
+				font-size: 0.8em;
+				font-weight: 400;
+				left: 50%;
+				line-height: 2.25em;
+				margin: -1.25em 0 0 -3em;
+				opacity: 0;
+				padding: 0 1.5em;
+				position: absolute;
+				text-align: center;
+				text-decoration: none;
+				top: 50%;
+				white-space: nowrap;
+			}
+
+			.portfolio.thumb:hover:after {
+				opacity: 1.0;
+			}
+
+			.portfolio.thumb:hover:before {
+				background: url("images/overlay.png"), url("images/overlay.png");
+				opacity: 1.0;
+			}
+
+		.portfolio img {
+			border-radius: 0.35em;
+			display: block;
+		}
+
+		.portfolio.left {
+			float: left;
+			margin: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.portfolio.right {
+			float: right;
+			margin: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.portfolio.left, .portfolio.right {
+			max-width: 40%;
+		}
+
+			.portfolio.left img, .portfolio.right img {
+				width: 100%;
+			}
+
+		.portfolio.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.portfolio.fit img {
+				width: 100%;
+			}
+			
+/* The Modal (background) */
+.modal {
+  display: none;  /*Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 80px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+	/* Modal Content */
+	.modal-content {
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 80%;
+	  overflow: auto;
+	
+	  /* For Animation*/
+		-webkit-animation: scale-modal 0.5s ease-in-out both;
+		animation: scale-modal 0.5s ease-in-out both;
+	}
+		.modal-content p{
+			margin: 0 0 1em 0;
+		}
+	@-webkit-keyframes scale-modal {
+		from {-webkit-transform:scale(0.4)} 
+		to {-webkit-transform:scale(1)}
+	}
+
+	@keyframes scale-modal {
+		from {transform:scale(0.4)} 
+		to {transform:scale(1)}
+	}
+
+	/* The Close Button */
+	.close {
+	  color: #aaaaaa;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+/*
+For Email Sent Alert Box
+*/
+#progress
+{
+	padding: 20px;
+	background-color: green; 
+	color: white;
+	margin-bottom: 15px;
+}
+
+/*Close for Email Sent Alert Box*/
+.closebtn
+{
+	margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+	.closebtn:hover {
+	  color: black;
+	}
+	
+/*For Image and Text inside the Modal to wrap */
+.modalimage
+{
+	float:left; 
+	width:50%; 
+	padding-right:10px;
+	padding-left:5px;	
+	/*background-color:blue;*/
+	clear:both;
+}
+
+/*Change Style for different screens*/
+@media screen and (max-width:786px){
+	/*Modal*/
+	#two .modalimage{
+		float:none;
+		width:100%;
+		padding-right:none;
+		padding-left:none;
+		padding-bottom:5px;
+	}
+	#two .modal{
+		padding-top:20px;
+	}
+	#two .modal-content
+	{	width:90%;
+	}		
+	#two .previousSlide, #two .nextSlide{
+		padding:16px;
+	}
+}
+
+/* The actual slides inside the modal
+the portfolio items*/
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.previousSlide,.nextSlide {
+  cursor: pointer;
+  color: #aaaaaa;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 0;
+  position: fixed;
+  
+  padding: 50px;
+  top: 45%;
+  width: auto;
+  z-index:2; 
+  
+  /*
+  top:0;
+  width: 5%;
+  height: 100%;
+  margin-top: -50px;*/
+  
+}
+
+.previousSlide{
+	left:0;
+	/*padding-left: 6px;*/
+}
+/* Position the "next button" to the right */
+.nextSlide {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	/*padding-right:6px;*/
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.previousSlide:hover,
+.nextSlide:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hStylingMargin{
+	margin-bottom: 0px !important;
+	line-height:1.5em;
+}
+

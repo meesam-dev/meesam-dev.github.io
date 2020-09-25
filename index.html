@@ -10,10 +10,12 @@
 
 		  gtag('config', 'UA-178689251-1');
 		</script>
-		<title>Mohammed Meesam</title>
+		
+		<title>Mohammed Meesam | Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/mod.css" />
 	</head>
 	<body class="is-preload">
 
@@ -21,8 +23,8 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="My Face" /></a>
-					<h1><strong>I am Mohammed Meesam</strong><br />
-					Web Developer/Network Engineer<br />
+					<h1><strong>I am Mohammed Meesam</strong><br /></h1>
+					<h1>Web Developer/Network Engineer<br />
 					</h1>
 				</div>
 			</header>
@@ -38,37 +40,84 @@
 						</header>
 						<p>A computer science graduate with a major in Networking. I'm passionate about cybersecurity and web development. Proficient with Python, HTML, CSS, Javascript, Linux and various pentesting tools</p>
 						<ul class="actions">
-							<li><a href="assets/mohammed-meesam-resume.pdf" class="button primary icon solid fa-download">Download Resume</a></li>
+							<li><a href="assets/mohammed-meesam-resume.pdf" class="button primary icon solid fa-download" target="_blank">Download Resume</a></li>
 						</ul>
+					</section>
+					
+					<!--
+					To add experience
+					col-5  col-12-xsmall for uni and col-7 for details 
+					work-item is for padding below useful for flex
+					hstyling is for line height and margin bottom for headings
+					xsmall is for small screens
+					col 5 and col 7 is 41% 59% something see main.css for more
+					col-12 is 100%-->
+					
+					<section>
+						<h2>Education</h2>
+						<div class="row">
+							<div class="col-12 col-12-xsmall work-item"><!--col-5  col-12-xsmall for uni and col-7 for details work-item is for padding below useful for flex-->
+							<h3 class="hStylingMargin"><strong> University of Bedfordshire</strong></h3>
+							<i class="hStylingMargin">Bachelor of Computer Science (First Class with Honours)</i><br/>
+							<strong class="hStylingMargin">Major in Networking<br/>
+							2018-2019</strong>
+							</div>
+							<!--
+							<div class="col-7 col-12-xsmall work-item"> Transferred credits from University of Wollongong Australia. Graduated First Class with Honours in Networking.<br/>
+							Developed a Blockchain Based Electronic Voting System for my final year project.
+							</div>-->
+							
+							<div class="col-12 col-12-xsmall work-item hStylingMargin">
+							<h3 class="hStylingMargin"><strong>University of Wollongong</strong><i> (Transferred)</i></h3>
+							<i class="hStylingMargin">Bachelor of Computer Science</i><br/>
+							<strong class="hStylingMargin">Major in CybserSecurity<br/>
+							2015-2016</strong>
+							</div>
+							<!--
+							<div class="col-7 col-12-xsmall">Worked as a University approved Peer Tutor while also doing a part-time job.
+							</div>-->
+						</div>
 					</section>
 
 				<!-- Two -->
+					<!--
+					TO ADD MORE PROJECTS 
+					add links to open modal for portfolio items
+					add divs with class myslides for all new modals 
+					add images
+					write the modals inside details for project
+					-->
+					
 					<section id="two">
-						<h2>Recent Work</h2>
+						<h2>My Projects</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<a href="javascript:return false;" class="portfolio fit thumb" onclick="openModal();currentSlide(1);"><img src="images/projects/website.jpg" alt="Portfolio Website" /></a>
+								<h3>Portfolio Website</h3>
+								<p>Website developed using HTML, CSS and Javascript.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<a href="#" class="portfolio fit thumb" onclick="openModal();currentSlide(2);return false;"><img src="images/projects/bbevs.jpg" alt="Blockchain Based Electronic Voting System" /></a>
+								<h3>Blockchain Based Electronic Voting System</h3>
+								<p>An E-Voting platform using decentralized blockchain hosted on IBM blockchain platform and IBM Kubernetes Service with real-time tallied results.</p>
+							</article>
+							
+<!--EDITS TO BE DONE HERE -->
+							
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="javascript:void(0);" class="portfolio fit thumb"><img src="images/projects/pt.jpg" alt="Packet Tracer" /></a>
+								<h3>Network Simulation</h3>
+								<p>Simulation of a large network distributed over different cities using Cisco Packet Tracer. Configured with VLAN, AD, RP, ACL, DHCP, DNS, IOT configurations.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<a href="images/projects/bank.jpg" class="portfolio fit thumb"><img src="images/projects/bank.jpg" alt="Banking Website" /></a>
+								<h3>Banking Website</h3>
+								<p>A project simulating a customer database for an online bank, allowing registration, logging in and transactions between users.</p>
 							</article>
+							<!--
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
@@ -76,10 +125,62 @@
 								<h3>Risus ornare lacinia</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
+							-->
 						</div>
 						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
+							<li><a href="https://github.com/mdmeesam" class="button icon solid brands fa-github">View Source Codes</a></li>
+							<!--Can create div to view more projects 
+							click for Full Portfolio-->
 						</ul>
+						
+<!-- 
+analytics add details tags and button track
+complete blog posts
+add links to open modal for portfolio items
+add divs with class myslides for all new modals
+ -->	
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+							<!--Navigation left and right -->
+							<div>
+								<a class="previousSlide" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="nextSlide" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+							<!-- Modal content -->
+							<div class="modal-content">
+							<span class="close">&times;</span>
+							
+							<!--Actual Portfolio Items with different content -->
+							<!--My slides class will be used to go through each index 
+							and open different modals for different portfolio items -->
+							<div class="mySlides">
+								<h3>Portfolio Website</h3>
+								<div class="modalimage">
+								<img src="images/projects/website.jpg" style="width:100%;border-radius: 0.35em;"/>
+								</div>
+								<div id="modaltext"><p>Some text in the Modal..
+								An E-Voting platform using decentralized blockchain hosted on IBM blockchain platform and IBM Kubernetes Service with real-time tallied resultsAn E-Voting platform using decentralized blockchain hosted on IBM blockchain platform and IBM Kubernetes Service with real-time tallied resultsAn E-Voting platform using decentralized blockchain hosted on IBM blockchain platform and IBM Kubernetes Service with real-time tallied resultsAn E-Voting platform using decentralized blockchain hosted on IBM blockchain platform and IBM Kubernetes Service with real-time tallied resultsAn E-Voting platform using 
+								decentralized blockchain hosted on IBM blockchain
+								platform and IBM Kubernetes Service with real-time tallied 
+								resultsAn E-Voting platform using decentralized blockchain 
+								
+								</p>
+								</div>
+							</div>
+							
+							<div class="mySlides">
+								<h3>BBEVS</h3>
+								<div class="modalimage">
+								<img src="images/projects/bbevs.jpg" style="width:100%;border-radius: 0.35em;"/>
+								</div>
+								<div id="modaltext"><p>BBEVS slide 2
+								</p></div>
+							</div>
+<!--EDITS TO BE DONE HERE -->
+							
+							</div> <!--End of modal Content -->
+						</div> <!--End of main modal -->
+						
 					</section>
 
 				<!-- Three -->
@@ -98,7 +199,11 @@
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 									<li><input type="reset" value="Clear" /></li>
-								</ul><div class="col-12" style="display:none" id="progress">Your message has been sent succesfully</div>
+								</ul>
+								<!--A good designed message sent succesfully alert box -->
+								<div class="col-12" style="display:none" id="progress">
+								 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>Your message has been sent succesfully
+								</div>
 								</form>
 							</div>
 							<div class="col-4 col-12-small">
@@ -118,6 +223,7 @@
 									</li>
 								</ul>
 							</div>
+							
 						</div>
 					</section>
 
@@ -145,42 +251,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="https://smtpjs.com/v3/smtp.js"></script>
-			<script>
-				$("#idForm").submit(function(e) {
-					var form = $(this);
-					var url = form.attr('action');
-					$.ajax({
-						   type: "POST",
-						   url: url,
-						   data: form.serialize(), // serializes the form's elements.
-						   success: function(data)
-						   {
-							   alert(data); // show response from the php script.
-						   }
-						 });
-					$('#progress').show();
-					e.preventDefault(); // avoid to execute the actual submit of the form.
-				});
-
-			</script>
-			<!--
-			<script type="text/javascript">
-			//index.js  
-			onclick="sendEmail()"
-				function sendEmail() 
-				{
-					Email.send({
-					//SecureToken: "6d5fbac4d",
-					To : 'email',
-					From : "email@gmail.com",
-					Subject : "<Test1>",
-					Body : "<test body>",
-					}).then(
-						message => alert(message)
-					);
-				}</script>
-				-->
-
+			<script src="assets/js/mail.js"></script>
+			<script src="assets/js/modal.js"></script>
+			
 	</body>
 </html>
