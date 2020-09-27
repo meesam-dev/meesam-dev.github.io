@@ -194,20 +194,21 @@ For Email Sent Alert Box
 /*Change Style for different screens*/
 @media screen and (max-width:786px){
 	/*Modal*/
-	#two .modalimage{
+	.modalimage{
 		float:none;
 		width:100%;
 		padding-right:none;
 		padding-left:none;
 		padding-bottom:5px;
 	}
-	#two .modal{
+	.modal{
 		padding-top:20px;
 	}
-	#two .modal-content
+	.modal-content
 	{	width:90%;
 	}		
-	#two .previousSlide, #two .nextSlide{
+	#myModal .previousSlide,
+	#myModal .nextSlide{
 		padding:16px;
 	}
 }
@@ -265,4 +266,3 @@ the portfolio items*/
 	margin-bottom: 0px !important;
 	line-height:1.5em;
 }
-
