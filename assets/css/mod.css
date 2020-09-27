@@ -266,3 +266,25 @@ the portfolio items*/
 	margin-bottom: 0px !important;
 	line-height:1.5em;
 }
+
+/* Touch 
+
+	body.is-touch .portfolio.thumb:before {
+		opacity: 0.5 !important;
+	}
+
+	body.is-touch .portfolio.thumb:after {
+		display: none !important;
+	}*/
+
+	body.is-touch .previousSlide,
+	body.is-touch .nextSlide{
+		background-color: rgba(0, 0, 0, 0.1) !important;
+	}
+	
+	body.is-touch .previousSlide:hover,
+	body.is-touch .nextSlide:hover{
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+
