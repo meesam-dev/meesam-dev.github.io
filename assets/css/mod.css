@@ -191,6 +191,12 @@ For Email Sent Alert Box
 	clear:both;
 }
 
+#modaltext pre{
+	margin: 0 0 0.5em 0 !important; 
+}
+#modaltext ul{
+	margin: 0 0 0.5em 0;
+}
 /*Change Style for different screens*/
 @media screen and (max-width:786px){
 	/*Modal*/
